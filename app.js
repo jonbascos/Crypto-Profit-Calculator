@@ -19,17 +19,14 @@ let totalCurrent = 0
 
 amountOfCoins.addEventListener('keyup', e => {
     numberOfCoins = e.target.value
-    console.log('number of coins: ', numberOfCoins)
 })
 
 averageCost.addEventListener('keyup', e => {
     avgCost = e.target.value
-    console.log('Average Value: ', avgCost)
 })
 
 currentPrice.addEventListener('keyup', e => {
     currentCoinPrice = e.target.value
-    console.log('Current Coin Price: ', currentCoinPrice)
 })
 
 calculate.addEventListener('click', () => {
