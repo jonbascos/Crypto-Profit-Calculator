@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #456268;
+    background-color: #fcf8ec;
+    font-size: 1.5em;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url('./images/bitcoin2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#version {
+    font-size: .2em;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.about-app {
+    max-width: 75vw;
+    // background-color: rgb(185, 179, 179);
+    background-color: #d0e8f2;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+
+    input {
+        padding: 20px;
+        text-align: center;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+
+    input {
+        margin: 10px 0px;
+    }
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+    button {
+        width: 200px;
+        padding: 20px;
+        background-color: #222;
+        color: #ccc;
+        border-radius: 10px;
+        font-size: 1.2em;
+        margin: 20px 10px;
+    }
+    button:hover {
+        background-color: teal;
+        color: #222;
+    }
+.totals {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    text-align: center;
+    line-height: 50px;
+}
+
+.donations li {
+    font-size: .8em;
+    margin: 5px 0px;
+}
+
+.crypto-wallet {
+    color: #79a3b1;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}

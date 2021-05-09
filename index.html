@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Crypto Profit Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Crypto Profit Calculator <span id='version'>V.1</span></h1>
+    </header>
+    <section class='about-app'>
+        Use this app to quickly calculate your current profit from when you purchased your coins to now.
+    </section>
+    <form>
+            <label for="amountOfCoins">Quantity of Coins:</label>
+            <br/>
+            <input type="text" id='amountOfCoins' Placeholder='Number of coins'>             
+            <br/>
+            <label for="averageCost">Average Cost Per Coin when purchased:</label>
+            <br/>
+            <input type="text" id='averageCost' Placeholder='Average Price Per Coin'>
+            <br/>
+            <label for="currentPrice">Current Price Per Coin:</label>
+            <br/>
+            <input type="text" id='currentPrice' placeholder="Current Price of Coin">
+            <br/>
+    </form>
+    <div class='buttonDiv'>
+            <button class='button calculate'>Calculate</button>
+            <button class='button reset'>Reset</button>
+    </div>
+    
+    <section class='totals'>
+            <p>Total Average Price: $ <span id='totalAveragePrice'></span></p>
+        
+            <p>Total at Current Price: $ <span id='totalCurrentPrice'></span></p>
+    
+            <p>Current Profit: $ <span id='currentProfit'></span></p>
+    </section>
+    <footer>
+        Donations appreciated:
+        <br/>
+        <ul class='donations'>
+            <li>Bitcoin: <span class='crypto-wallet'>3FZcKnm2e7ktT5gyeFi9Zug8nEtwa3Rt8e</span></li>
+            <li>Ethereum: <span class="crypto-wallet">0xeFD9e72f1e667e367460C793f285F10ACaD53fE4</span></li>
+            <li>Litecoin: <span class='crypto-wallet'>MNBU1RcZVGPUrJcNPAvXCjc7nRC1XU9vP7</span></li>
+            <li>Dogecoin: <span class="crypto-wallet">DTqp5vHBnKs5U7uGawUB4uPrHVaKnXgCYg</span></li>
+        </ul>
+        <br/>
+        Copyright &copy; 2021 - <a href='mailto:jon@jonbascos.com'>Jon Bascos</a>
+    </footer>
+
+    <script src='app.js'></script>
+</body> 
+</html>
