@@ -29,14 +29,16 @@ currentPrice.addEventListener('keyup', e => {
     currentCoinPrice = e.target.value
 })
 
-calculate.addEventListener('click', () => {
+calculate.addEventListener('click', e => {
+    e.preventDefault()
     total.style.display = 'flex'
     totalAvgPriceSpan.textContent = Math.floor(getTotalAvg(numberOfCoins, avgCost))
     totalCurrentPriceSpan.textContent = Math.floor(getTotalCurrentPrice(numberOfCoins, currentCoinPrice))
     currentProfitSpan.textContent = Math.floor(totalCurrent - totalAvg)
 })
 
-reset.addEventListener('click', () => {
+reset.addEventListener('click', e => {
+    e.preventDefault()
     total.style.display = 'none'
     amountOfCoins.value = ' '
     currentPrice.value = ' '
@@ -54,5 +56,3 @@ const getTotalCurrentPrice = (numCoins, currentCoinValue) => {
     totalCurrent = result
     return result
 }
-
-

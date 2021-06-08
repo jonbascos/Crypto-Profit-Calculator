@@ -107,7 +107,14 @@ button:hover {
 }
 
 footer {
+  font-size: .8em;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px auto;
+  padding: 10px;
+  max-width: 500px;
+}
+
+footer li {
+  list-style: none;
 }
 /*# sourceMappingURL=styles.css.map */
